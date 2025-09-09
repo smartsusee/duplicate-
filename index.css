@@ -1,0 +1,28 @@
+table,
+tr,
+th,
+td {
+  /* border: w s c ; */
+  border: 1px solid rgba(0, 0, 0, 0.95);
+  border-collapse: collapse;
+  width: 700px;
+  height: 30px;
+  text-align: center;
+
+  /* 240px  */
+}
+
+th {
+  background-color: lightpink;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    transition: 0.3s; 
+  }
+}
+
+tr:nth-child(3n + 1) {
+  background-color: rgb(226, 226, 216);
+}
